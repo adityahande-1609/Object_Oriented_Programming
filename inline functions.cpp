@@ -14,7 +14,7 @@ inline int lar(int a,int b)
 		return a;
 	}
 }
-inline car(int a)
+inline float car(int a)
 {
 	float ar;
 	ar =pi*a*a;
@@ -26,7 +26,7 @@ int main()
 	int a,a1,a2;
 	cout<<"enter number";
 	cin>>a;
-	cout<<" the cude is : "<<cube(a);
+	cout<<" the cube is : "<<cube(a);
 	cout<<"\n\n\nEnter 2 numbers:";
 	cin>>a1>>a2;
 	cout<<"\nthe larger number is : "<<lar(a1,a2);
