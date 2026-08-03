@@ -20,10 +20,22 @@ inline float car(int a)
 	ar =pi*a*a;
 	return ar;
 }
+inline float si(int m,float r,float c){
+	float i=((r/100)*c)*m;
+	return i;
+}
+inline void swap(){
+	int t,a,b;
+	cin>>a>>b;
+	t=a;
+	a=b;
+	b=t;
+	cout<<"\n new num 1 :"<<a<<"\n new num2: "<<b;
+}
 int main()
 {
-	float ar;
-	int a,a1,a2;
+	float ar,r,c;
+	int a,a1,a2,m;
 	cout<<"enter number";
 	cin>>a;
 	cout<<" the cube is : "<<cube(a);
@@ -34,5 +46,11 @@ int main()
 	cin>>a;
 	ar=car(a);
 	cout<<"\n Area of the circle is: "<<car(a); 
+	cout<<"\n\n enter the capital , rate and time period (in months): ";
+	cin >>c>>r>>m;
+	cout<<"simple interst will be : "<<si(m,r,c); 
+	cout<<"\nenter 2 nums";
+	swap();
+	
 	return 0;
 }
